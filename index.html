@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Mohamed Asif P M, aspiring Java Backend Developer.">
-  <title>Mohamed Asif P M | Java Developer</title>
+  <meta name="description" content="Mohamed Asif P M — Java Backend Developer portfolio. Skills include Java, OOP, SQL, MySQL, JDBC, Maven, Git, HTML and CSS.">
+  <meta name="keywords" content="Mohamed Asif, Java Developer, Junior Java Developer, Java Backend Developer, Core Java, Java 8, OOP, Object-Oriented Programming, SQL, MySQL, JDBC, Maven, DAO, CRUD, Git, GitHub, HTML, CSS, MongoDB Basics">
+  <meta name="author" content="Mohamed Asif P M">
+  <title>MD | Java Backend Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <nav class="nav container">
-      <a class="logo" href="#home">Asif.</a>
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="MD home">MD.</a>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -25,72 +28,104 @@
     <section class="hero container" id="home">
       <p class="eyebrow">JAVA BACKEND DEVELOPER</p>
       <h1>Hi, I'm <span>Mohamed Asif P M</span></h1>
-      <p class="hero-text">MCA graduate interested in building reliable backend applications using Java, SQL and JDBC. Currently looking for a junior Java Developer opportunity.</p>
-      <a class="button" href="#projects">View My Projects</a>
+      <p class="hero-text">MCA graduate with practical experience in Java, object-oriented programming, SQL, JDBC and MySQL. Interested in developing reliable backend applications and pursuing an entry-level Java Developer opportunity.</p>
+      <div class="hero-actions">
+        <a class="button" href="#projects">Explore Projects</a>
+        <a class="button button-outline" href="#contact">Contact Me</a>
+      </div>
     </section>
 
     <section class="section container" id="about">
-      <h2>About Me</h2>
-      <p>I am a recent MCA graduate with a foundation in Java programming, object-oriented concepts, SQL and database connectivity. I have practised these skills by building a Java-based Student Management System with MySQL. I enjoy learning, solving problems and improving my development skills. I am currently learning Spring Boot and REST API development.</p>
+      <h2>Professional Summary</h2>
+      <p>MCA graduate specialising in Generative AI, with a foundation in Java 8, object-oriented programming, relational databases and backend application development. Built a Java-based Student Management System using JDBC, MySQL and Maven, applying CRUD operations and a layered DAO and Service architecture. Familiar with Git and GitHub for version control and source-code management. Currently expanding knowledge of Spring Boot and REST API development, and seeking a Junior Java Developer or Graduate Software Developer role.</p>
     </section>
 
     <section class="section container" id="skills">
       <h2>Technical Skills</h2>
-      <div class="skills-list">
-        <span>Java 8</span><span>Object-Oriented Programming</span><span>SQL</span>
-        <span>MySQL</span><span>JDBC</span><span>Maven</span>
-        <span>Git &amp; GitHub</span><span>HTML</span><span>CSS</span>
-        <span>Spring Boot (Learning)</span><span>REST APIs (Learning)</span>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <p>Java 8, Core Java, Object-Oriented Programming (OOP), Classes and Objects, Inheritance, Polymorphism, Encapsulation, Abstraction, Exception Handling, Collections, Basic Data Structures</p>
+        </div>
+        <div class="skill-group">
+          <h3>Database &amp; Connectivity</h3>
+          <p>SQL, MySQL, DBMS, Relational Database Concepts, Joins, Normalization, JDBC, CRUD Operations</p>
+        </div>
+        <div class="skill-group">
+          <h3>Backend &amp; Development Tools</h3>
+          <p>DAO Pattern, Service Layer, Maven, Git, GitHub, IntelliJ IDEA</p>
+        </div>
+        <div class="skill-group">
+          <h3>Web Fundamentals</h3>
+          <p>HTML5, CSS3</p>
+        </div>
+        <div class="skill-group">
+          <h3>Currently Learning</h3>
+          <p>Spring Boot, REST API Development</p>
+        </div>
       </div>
     </section>
 
     <section class="section container" id="projects">
       <h2>Projects</h2>
       <article class="project-card">
-        <h3>Student Management System</h3>
-        <p>A console-based Java application to add, view, update and delete student records. Uses JDBC to connect to a MySQL database and is organised with DAO and Service layers.</p>
-        <p class="tech">Java · JDBC · MySQL · Maven</p>
-        <a href="https://github.com/MD-ASIF-09/Student-Management-System" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+        <div class="project-heading">
+          <h3>Student Management System</h3>
+          <span class="project-type">Java Backend Project</span>
+        </div>
+        <p>Developed a console-based application to manage student records with Create, Read, Update and Delete (CRUD) operations. Integrated a MySQL database using JDBC and organised the application into Student, DAO, Service and database connection components to improve separation of concerns and maintainability.</p>
+        <p class="tech"><strong>Technologies:</strong> Java 8 · JDBC · MySQL · Maven</p>
+        <a href="https://github.com/MD-ASIF-09/Student-Management-System" target="_blank" rel="noopener noreferrer">View source code on GitHub</a>
       </article>
+
       <article class="project-card">
-        <h3>Number Guessing Game</h3>
-        <p>A beginner Java console game where the player tries to guess a randomly generated number, practising variables, conditionals, loops and user input.</p>
-        <p class="tech">Java</p>
-        <a href="https://github.com/MD-ASIF-09" target="_blank" rel="noopener noreferrer">View GitHub Profile</a>
-      </article>
-      <article class="project-card">
-        <h3>Library Management System</h3>
-        <p><strong>Status: Planned practice project</strong></p>
-        <p>A planned console-based application to manage books and library members, with features for registering members and issuing and returning books. The project will use a layered structure to practise database operations and application organisation.</p>
-        <p class="tech">Planned stack: Java · JDBC · MySQL · Maven</p>
+        <div class="project-heading">
+          <h3>Library Management System</h3>
+          <span class="project-type">Java Application</span>
+        </div>
+        <p>A Java-based application concept for managing library operations, including book catalogue records, member registration, book issue and return workflows. The project scope applies object-oriented design and a layered DAO and Service structure, with database connectivity for persistent record management.</p>
+        <p class="tech"><strong>Technologies:</strong> Java 8 · JDBC · MySQL · Maven</p>
       </article>
     </section>
 
     <section class="section container" id="education">
       <h2>Education</h2>
       <div class="education-item">
-        <h3>Master of Computer Applications (Generative AI)</h3>
+        <h3>Master of Computer Applications (MCA) — Generative AI</h3>
         <p>SRM Institute of Science and Technology</p>
         <p class="tech">GPA: 8.83</p>
       </div>
       <div class="education-item">
-        <h3>Bachelor of Computer Applications</h3>
+        <h3>Bachelor of Computer Applications (BCA)</h3>
         <p>SRM Institute of Science and Technology</p>
         <p class="tech">GPA: 8.35</p>
       </div>
     </section>
 
+    <section class="section container" id="certifications">
+      <h2>Certifications</h2>
+      <article class="certificate-card">
+        <div>
+          <p class="certificate-provider">MongoDB University</p>
+          <h3>MongoDB Basics (M001)</h3>
+          <p>Proof of Completion · October 18, 2022</p>
+          <p class="tech">Completed the MongoDB Basics course.</p>
+        </div>
+        <a class="text-link" href="https://university.mongodb.com/course_completion/0c371b55-1cba-41d3-82b2-ebbdd3495130" target="_blank" rel="noopener noreferrer">Verify certificate</a>
+      </article>
+    </section>
+
     <section class="section container" id="contact">
       <h2>Contact</h2>
-      <p>I am interested in junior Java Developer and entry-level backend development opportunities.</p>
+      <p>Open to Junior Java Developer, Java Backend Developer and entry-level Software Developer opportunities.</p>
       <ul class="contact-list">
-        <li>Email: <a href="mailto:pmmdasif09@gmail.com">pmmdasif09@gmail.com</a></li>
-        <li>Phone: <a href="tel:9585144106">9585144106</a></li>
-        <li>GitHub: <a href="https://github.com/MD-ASIF-09" target="_blank" rel="noopener noreferrer">github.com/MD-ASIF-09</a></li>
+        <li><strong>Email:</strong> <a href="mailto:pmmdasif09@gmail.com">pmmdasif09@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:9585144106">9585144106</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/MD-ASIF-09" target="_blank" rel="noopener noreferrer">github.com/MD-ASIF-09</a></li>
       </ul>
     </section>
   </main>
 
-  <footer><p>© 2026 Mohamed Asif P M</p></footer>
+  <footer><p>© 2026 Mohamed Asif P M · Java Backend Developer Portfolio</p></footer>
 </body>
 </html>
